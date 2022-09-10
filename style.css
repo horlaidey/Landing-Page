@@ -1,0 +1,175 @@
+body{
+    line-height: 1.45;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'Helvetica Nueue', Helvetica, sans-serif;
+}
+header{
+    color: #ffffff;
+    background-color: #3d556a;
+    padding: 80px 0;
+    text-align: center;
+    /* margin: 20px 0; */
+}
+h1{
+    font-size: 3rem;
+    margin: 0 0 16px 0;
+}
+h2{
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 0 0 16px 0;
+}
+.container{
+    max-width: 900px;
+    padding: 0 20px 0 20px;
+    margin: 0 auto;
+}
+.btn{
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    background: #549DA0;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #468486;
+}
+section{
+    padding: 40px 0;
+    text-align: center;
+}
+.features{
+    color: #000;
+    background-color: #ffffff;
+}
+.feature{
+    width: 32%;
+    display: inline-block;
+    font-size: 16px;
+}
+.feature img{
+    width: 40%;
+}
+.quote{
+    color: #ffffff;
+    background-color: rgb(96, 180, 207);
+
+}
+blockquote{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+blockquote p{
+    margin: 0 0 5px 0;
+    font-size: 24px;
+}
+blockquote cite{
+    font-size: 16px;
+    font-style: italic;
+}
+blockquote cite::before{
+    content: "-";
+    margin-right: 5px;
+}
+footer{
+    color: #868686;
+    background-color: #353535;
+    padding: 32px 0;
+    text-align: center;
+    font-size: 12px;
+}
+footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+footer li{
+    display: inline-block;
+}
+footer li a{
+    text-decoration: none;
+    padding: 6px;
+    font-size: 14px;
+    color: #c3c3c3;
+}
+footer li a:hover{
+    color: #ffffff;
+}
+.submenu{
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #549da3;
+    position: absolute;
+    text-align: center;
+    border-radius: 5px;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    display: none;
+}
+.submenu a{
+    display: block;
+    padding: 12px 16px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.submenu a:hover{
+    background: #468486;
+}
+
+@media screen and (max-width: 480px) {
+    .btn{
+        display: block;
+        font-size: 18px;
+    }
+    h1{
+        font-size: 32px;
+        margin: 0 0 8px 0;
+    }
+    h2{
+        font-size: 18px;
+    }
+    section{
+        padding: 25px 0 15px 0;
+    }
+    .feature{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 10px 0;
+        text-align: left;
+        font-size: 16px;
+    }
+    .feature img{
+        width: 15%;
+        min-width: 60px;
+        margin-right: 20px;
+    }
+    .quote{
+        padding: 30px 0;
+    }
+    blockquote p{
+        font-size: 18px;
+    }
+    blockquote cite{
+        font-size: 14px;
+    }
+    footer li{
+        display: block;
+        margin: 5px 0;
+    }
+    footer{
+        padding: 30px 0 10px 0;
+    }
+    .submenu{
+        width: 100%;
+        position: relative;
+    }
+}
